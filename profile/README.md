@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/Hebrish-ASR/.github/main/profile/wordmark.png" alt="Hebrish עבריש" width="360"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Hebrish-ASR/.github/main/profile/banner.png" alt="Hebrish עבריש: dictation that gets the Hebrew words right" width="100%"></p>
 
 **Dictation that gets the Hebrew words right.**
 
