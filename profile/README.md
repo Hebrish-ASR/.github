@@ -10,7 +10,7 @@
 
 **Dictation that gets the Hebrew words right.**
 
-Hebrish is a not-for-profit project building open speech tools for code-switched English–Hebrew: English speech with Hebrew words mixed in, as used by English-speaking immigrants in Israel and across the Jewish world. Stock English models mangle the Hebrew words in an English sentence. The Hebrish speech recognition models write them in one consistent romanized spelling and run on the device, so no audio is sent anywhere. A text-to-speech model, Meorav, works the other way: it reads code-switched English aloud and pronounces the Hebrew words correctly.
+Hebrish is a one-person project building open speech tools for code-switched English–Hebrew: English speech with Hebrew words mixed in, as used by English-speaking immigrants in Israel and across the Jewish world. Stock English models mangle the Hebrew words in an English sentence. The Hebrish speech recognition models write them in one consistent romanized spelling and run on the device, so no audio is sent anywhere. A text-to-speech model, Meorav, works the other way: it reads code-switched English aloud and pronounces the Hebrew words correctly.
 
 ## The models
 
