@@ -10,11 +10,13 @@
 
 **Dictation that gets the Hebrew words right.**
 
-Hebrish is a not-for-profit project building open speech tools for code-switched English–Hebrew: English speech with Hebrew words mixed in, as used by English-speaking immigrants in Israel and across the Jewish world. Stock English models mangle the Hebrew words in an English sentence. The Hebrish models write them in one consistent romanized spelling and run on the device, so no audio is sent anywhere.
+Hebrish is a not-for-profit project building open speech tools for code-switched English–Hebrew: English speech with Hebrew words mixed in, as used by English-speaking immigrants in Israel and across the Jewish world. Stock English models mangle the Hebrew words in an English sentence. The Hebrish speech recognition models write them in one consistent romanized spelling and run on the device, so no audio is sent anywhere. A text-to-speech model, Meorav, works the other way: it reads code-switched English aloud and pronounces the Hebrew words correctly.
 
 ## The models
 
-The models are named after Israeli favourites. Every Sabich, Jachnun and Shakshuka model is at **v1.0**; later retrains will be v1.1, v1.2 and so on. See every model on one page in the **[Hebrish Models Space](https://huggingface.co/spaces/Hebrish/Hebrish-Models)**, or let [hebrish.app/models/choose](https://hebrish.app/models/choose) pick one for your device.
+The models are named after Israeli favourites, in two areas: speech recognition (ASR) and speech synthesis (TTS). Every Sabich, Jachnun and Shakshuka model is at **v1.0**; later retrains will be v1.1, v1.2 and so on. Meorav is still at **PoC-1**, an experimental first checkpoint. See every model on one page in the **[Hebrish Models Space](https://huggingface.co/spaces/Hebrish/Hebrish-Models)**, or let [hebrish.app/models/choose](https://hebrish.app/models/choose) pick one for your device.
+
+### Speech recognition (ASR)
 
 | Line | What it does | Variants |
 | --- | --- | --- |
@@ -22,9 +24,15 @@ The models are named after Israeli favourites. Every Sabich, Jachnun and Shakshu
 | **Jachnun** | Code-switching only, without the tech vocabulary. In the apps next to Sabich. | [Jachnun](https://huggingface.co/Hebrish/Jachnun) (Parakeet TDT 0.6B v2) |
 | **Shakshuka** | Streaming: the words appear while you are still talking. | [Shakshuka](https://huggingface.co/Hebrish/Shakshuka) (Nemotron Speech Streaming 0.6B) |
 | Whisper Hebrish | Whisper fine-tunes, where the project started. | [Small ACFT](https://huggingface.co/Hebrish/Whisper-Hebrish-Small-ACFT) for FUTO Keyboard · [large-v3-turbo](https://huggingface.co/danielrosehill/Whisper-Hebrish) |
-| Token classifier | Finds romanized Hebrew words in English text, for text-to-speech. | [Hebrew-Latin-Token-Classifier](https://huggingface.co/Hebrish/Hebrew-Latin-Token-Classifier) |
 
-On-device builds (sherpa-onnx, ONNX, GGUF, MLX) are in their own `-<format>` repos under [huggingface.co/Hebrish](https://huggingface.co/Hebrish). The weights are gated: request access on the repository page, or write to [access@hebrish.app](mailto:access@hebrish.app). The apps download the models from Hebrish's own CDN and need no access request. Model cards and benchmarks: [hebrish.app/models](https://hebrish.app/models).
+### Speech synthesis (TTS)
+
+| Line | What it does | Variants |
+| --- | --- | --- |
+| **Meorav** (PoC) | Code-switching text-to-speech: reads code-switched English aloud and pronounces the Hebrew words in it correctly. Experimental, no benchmark yet. [hebrish.app/models/meorav](https://hebrish.app/models/meorav) | [Meorav PoC-1](https://huggingface.co/Hebrish/TTS-V1) (Qwen3-TTS 12Hz 1.7B Base) · training code: [Meorav-TTS](https://github.com/Hebrish-ASR/Meorav-TTS) |
+| Token classifier | Supporting model: finds romanized Hebrew words in English text, for text-to-speech. | [Hebrew-Latin-Token-Classifier](https://huggingface.co/Hebrish/Hebrew-Latin-Token-Classifier) |
+
+On-device builds (sherpa-onnx, ONNX, GGUF, MLX) are in their own `-<format>` repos under [huggingface.co/Hebrish](https://huggingface.co/Hebrish). The speech recognition weights are gated: request access on the repository page, or write to [access@hebrish.app](mailto:access@hebrish.app). The apps download the models from Hebrish's own CDN and need no access request. Meorav PoC-1 is open (CC BY-NC 4.0). Model cards and benchmarks: [hebrish.app/models](https://hebrish.app/models).
 
 So far the models are trained on one speaker's voice. Want them to learn yours? [Contribute recordings](https://hebrish.app/support).
 
