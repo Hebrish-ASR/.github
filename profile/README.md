@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/Hebrish-ASR/.github/main/profile/banner.png" alt="Hebrish עבריש: dictation that gets the Hebrew words right" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Hebrish-ASR/.github/main/profile/banner.png" alt="Hebrish היבריש: dictation that gets the Hebrew words right" width="100%"></p>
 
 <p align="center">
 <a href="https://hebrish.app"><img src="https://img.shields.io/badge/Website-hebrish.app-0f6b5c?style=for-the-badge" alt="Website: hebrish.app"></a>
