@@ -6,6 +6,7 @@
 <a href="https://hebrish.app/get/android"><img src="https://img.shields.io/badge/Android-APK-0f6b5c?style=for-the-badge&logo=android&logoColor=white" alt="Android: APK"></a>
 <a href="https://hebrish.app/get/ubuntu"><img src="https://img.shields.io/badge/Linux-.deb-0f6b5c?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Linux: .deb"></a>
 <a href="https://hebrish.app/get/windows"><img src="https://img.shields.io/badge/Windows-.zip-0f6b5c?style=for-the-badge&logo=windows&logoColor=white" alt="Windows: .zip"></a>
+<a href="https://www.youtube.com/@hebrishasr"><img src="https://img.shields.io/badge/YouTube-Hebrish-0f6b5c?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube: Hebrish"></a>
 </p>
 
 **Dictation that gets the Hebrew words right.**
