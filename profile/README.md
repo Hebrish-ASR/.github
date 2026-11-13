@@ -12,6 +12,12 @@
 
 Hebrish is a one-person project building open speech tools for code-switched English–Hebrew: English speech with Hebrew words mixed in, as used by English-speaking immigrants in Israel and across the Jewish world. Stock English models mangle the Hebrew words in an English sentence. The Hebrish speech recognition models write them in one consistent romanized spelling and run on the device, so no audio is sent anywhere. A text-to-speech model, Meorav, works the other way: it reads code-switched English aloud and pronounces the Hebrew words correctly.
 
+## Watch: how the training data is recorded
+
+[![How I Record Training Data for My Own Speech-to-Text Model](https://i.ytimg.com/vi/RWTDqKSKOQE/hqdefault.jpg)](https://www.youtube.com/watch?v=RWTDqKSKOQE)
+
+Daniel on camera: how the takes the models are trained on are recorded ([YouTube](https://www.youtube.com/watch?v=RWTDqKSKOQE); more videos at [hebrish.app/updates/videos](https://hebrish.app/updates/videos)).
+
 ## The models
 
 The models are named after Israeli favourites, in two areas: speech recognition (ASR) and speech synthesis (TTS). Every Sabich, Jachnun and Shakshuka model is at **v1.0**; later retrains will be v1.1, v1.2 and so on. Meorav is still at **PoC-1**, an experimental first checkpoint. See every model on one page in the **[Hebrish Models Space](https://huggingface.co/spaces/Hebrish/Hebrish-Models)**, or let [hebrish.app/models/choose](https://hebrish.app/models/choose) pick one for your device.
