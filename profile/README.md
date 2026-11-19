@@ -24,7 +24,7 @@ Daniel on camera: how the takes the models are trained on are recorded ([YouTube
 The models are named after Israeli favourites. This table is the inventory: which models are maintained, how they are updated, what each is for and where it runs. It is generated from the same data as [hebrish.app/models/inventory](https://hebrish.app/models/inventory) and the [Hebrish Models Space](https://huggingface.co/spaces/Hebrish/Hebrish-Models), so the three always agree.
 
 <!-- model-inventory:begin -->
-> Every model here can still be downloaded, and access requests for the older and less maintained ones are still approved. We strongly recommend the up-to-date models (marked Recommended): they are the ones still being trained, so they recognise the widest vocabulary.
+> Every model here can still be downloaded, and access requests for the older and less maintained ones are still approved. The up-to-date models (marked Recommended) are strongly recommended: they are the ones still being trained, so they recognise the widest vocabulary.
 
 | Model | Status | Use case | Updates | Platforms | In the Hebrish apps | Latest | Last release |
 |---|---|---|---|---|---|---|---|
