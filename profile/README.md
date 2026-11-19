@@ -43,7 +43,7 @@ The models are named after Israeli favourites. This table is the inventory: whic
 | [Whisper Hebrish](https://huggingface.co/danielrosehill/Whisper-Hebrish) | Legacy · Superseded (use [Sabich](https://hebrish.app/models/sabich) instead) | Dictation (speech to text) | None | GPU server | No | Version 2 | 2026-10-17 |
 | [Whisper Hebrish Small ACFT](https://huggingface.co/Hebrish/Whisper-Hebrish-Small-ACFT) | Legacy · Superseded (use [Sabich](https://hebrish.app/models/sabich) instead) | Dictation (speech to text) | None | Android | No | small-en-en30-acft | 2026-10-17 |
 | [Fritter](https://huggingface.co/Fritter-ASR/Fritter) | Separate project · Active | Dictation (speech to text) | Regular incremental updates | Linux, Windows, macOS, Android | No | Fritter v1.2 | 2026-11-05 |
-| [Gefilte](https://huggingface.co/Hebrish/Gefilte) | Separate project · Proof of concept | Dictation (speech to text) | Early development | Linux, Windows, Low-power / wearables | No | Gefilte PoC-1 | 2026-11-17 |
+| [Gefilte](https://huggingface.co/Hebrish/Gefilte) | Separate project · Proof of concept | Dictation (speech to text) | Early development | Linux, Windows, Low-power / wearables | Desktop | Gefilte PoC-1 | 2026-11-17 |
 
 Generated 2026-11-19 from [hebrish.app/models/inventory](https://hebrish.app/models/inventory) ([JSON](https://hebrish.app/data/model-inventory.json)).
 <!-- model-inventory:end -->
