@@ -21,25 +21,34 @@ Daniel on camera: how the takes the models are trained on are recorded ([YouTube
 
 ## The models
 
-The models are named after Israeli favourites, in two areas: speech recognition (ASR) and speech synthesis (TTS). Every Sabich, Jachnun and Shakshuka model is at **v1.0**; later retrains will be v1.1, v1.2 and so on. Meorav is still at **PoC-1**, an experimental first checkpoint. See every model on one page in the **[Hebrish Models Space](https://huggingface.co/spaces/Hebrish/Hebrish-Models)**, or let [hebrish.app/models/choose](https://hebrish.app/models/choose) pick one for your device.
+The models are named after Israeli favourites. This table is the inventory: which models are maintained, how they are updated, what each is for and where it runs. It is generated from the same data as [hebrish.app/models/inventory](https://hebrish.app/models/inventory) and the [Hebrish Models Space](https://huggingface.co/spaces/Hebrish/Hebrish-Models), so the three always agree.
 
-### Speech recognition (ASR)
+<!-- model-inventory:begin -->
+> Every model here can still be downloaded, and access requests for the older and less maintained ones are still approved. We strongly recommend the up-to-date models (marked Recommended): they are the ones still being trained, so they recognise the widest vocabulary.
 
-| Line | What it does | Variants |
-| --- | --- | --- |
-| **Sabich** (recommended) | Code-switching plus tech vocabulary, brand names and numbers. The default in the apps. | [Sabich](https://huggingface.co/Hebrish/Sabich) (Parakeet TDT 0.6B v2) · [-Qwen3-ASR-1.7B](https://huggingface.co/Hebrish/Sabich-Qwen3-ASR-1.7B) and [-Canary-Qwen-2.5B](https://huggingface.co/Hebrish/Sabich-Canary-Qwen-2.5B) for desktop GPUs · [-Parakeet-110M](https://huggingface.co/Hebrish/Sabich-Parakeet-110M) for small devices · [-asr4all-S](https://huggingface.co/Hebrish/Sabich-asr4all-S) and [-M](https://huggingface.co/Hebrish/Sabich-asr4all-M) for wearables |
-| **Jachnun** | Code-switching only, without the tech vocabulary. In the apps next to Sabich. | [Jachnun](https://huggingface.co/Hebrish/Jachnun) (Parakeet TDT 0.6B v2) |
-| **Shakshuka** | Streaming: the words appear while you are still talking. | [Shakshuka](https://huggingface.co/Hebrish/Shakshuka) (Nemotron Speech Streaming 0.6B) |
-| Whisper Hebrish | Whisper fine-tunes, where the project started. | [Small ACFT](https://huggingface.co/Hebrish/Whisper-Hebrish-Small-ACFT) for FUTO Keyboard · [large-v3-turbo](https://huggingface.co/danielrosehill/Whisper-Hebrish) |
+| Model | Status | Use case | Updates | Platforms | In the Hebrish apps | Latest | Last release |
+|---|---|---|---|---|---|---|---|
+| [Sabich](https://huggingface.co/Hebrish/Sabich-Rolling) | **Recommended** · Active | Dictation (speech to text) | Rolling: retrained from the latest weights as new recordings arrive | Android, Linux, Windows, macOS | Android + Desktop | Sabich v5.1 | 2026-11-19 |
+| [Shakshuka](https://huggingface.co/Hebrish/Shakshuka) | **Recommended** · Occasional updates | Streaming dictation | Retrained now and then while its accuracy is worked on | Linux, Windows | Desktop | Shakshuka v2.2 | 2026-11-17 |
+| [Falafel](https://huggingface.co/Hebrish/Falafel) | **Recommended** · Active | Voice commands | Updated alongside Sabich | Android, Linux, Windows | Android + Desktop | Falafel v1.1 | 2026-11-16 |
+| [Meorav](https://huggingface.co/Hebrish/Meorav) | **Recommended** · Active | Text to speech | New versions as the TTS work moves on | GPU server | No | Meorav v3.0 | 2026-11-15 |
+| [Jachnun](https://huggingface.co/Hebrish/Jachnun) | Available as is · Occasional updates (use [Sabich](https://hebrish.app/models/sabich) instead) | Dictation (speech to text) | Occasional updates, no schedule | Browser, Linux, Windows, macOS | No | Jachnun v1.0 | 2026-10-19 |
+| [Sabich-Canary-Qwen-2.5B](https://huggingface.co/Hebrish/Sabich-Canary-Qwen-2.5B) | Available as is · Frozen (use [Sabich](https://hebrish.app/models/sabich) instead) | Dictation (speech to text) | None planned | GPU server | No | Sabich-Canary-Qwen-2.5B v1.0 | 2026-10-21 |
+| [Sabich-Parakeet-110M](https://huggingface.co/Hebrish/Sabich-Parakeet-110M) | Available as is · Frozen (use [Sabich](https://hebrish.app/models/sabich) instead) | Dictation (speech to text) | None planned | Android, Low-power / wearables | No | Sabich-Parakeet-110M v1.0 | 2026-10-21 |
+| [Sabich-Qwen3-ASR-1.7B](https://huggingface.co/Hebrish/Sabich-Qwen3-ASR-1.7B) | Available as is · Proof of concept (use [Sabich](https://hebrish.app/models/sabich) instead) | Dictation (speech to text) | None: a one-off experiment | GPU server | No | Sabich-Qwen3-ASR-1.7B v1.0 | 2026-10-21 |
+| [Sabich-asr4all](https://huggingface.co/Hebrish/Sabich-asr4all-S) | Available as is · Frozen (use [Sabich](https://hebrish.app/models/sabich) instead) | Dictation (speech to text) | None planned | Low-power / wearables | No | Sabich-asr4all-S and -M v1.0 | 2026-10-21 |
+| [Meorav-Daniel](https://huggingface.co/Hebrish/Meorav-Daniel) | Available as is · Frozen | Text to speech | None planned | GPU server | No | Meorav-Daniel v1.0 | 2026-11-15 |
+| [Meorav-Multi-Voice](https://huggingface.co/Hebrish/Meorav-Multi-Voice) | Available as is · Frozen (use [Meorav](https://hebrish.app/models/meorav) instead) | Text to speech | None planned | GPU server | No | Meorav-Multi-Voice v1.0 | 2026-11-16 |
+| [Hebrew-Latin Token Classifier](https://huggingface.co/Hebrish/Hebrew-Latin-Token-Classifier) | Available as is · Frozen | Accessory (text tools) | None planned | Linux, Windows, macOS, GPU server | No | v1 | 2026-10-15 |
+| [Whisper Hebrish](https://huggingface.co/danielrosehill/Whisper-Hebrish) | Legacy · Superseded (use [Sabich](https://hebrish.app/models/sabich) instead) | Dictation (speech to text) | None | GPU server | No | Version 2 | 2026-10-17 |
+| [Whisper Hebrish Small ACFT](https://huggingface.co/Hebrish/Whisper-Hebrish-Small-ACFT) | Legacy · Superseded (use [Sabich](https://hebrish.app/models/sabich) instead) | Dictation (speech to text) | None | Android | No | small-en-en30-acft | 2026-10-17 |
+| [Fritter](https://huggingface.co/Fritter-ASR/Fritter) | Separate project · Active | Dictation (speech to text) | Regular incremental updates | Linux, Windows, macOS, Android | No | Fritter v1.2 | 2026-11-05 |
+| [Gefilte](https://huggingface.co/Hebrish/Gefilte) | Separate project · Proof of concept | Dictation (speech to text) | Early development | Linux, Windows, Low-power / wearables | No | Gefilte PoC-1 | 2026-11-17 |
 
-### Speech synthesis (TTS)
+Generated 2026-11-19 from [hebrish.app/models/inventory](https://hebrish.app/models/inventory) ([JSON](https://hebrish.app/data/model-inventory.json)).
+<!-- model-inventory:end -->
 
-| Line | What it does | Variants |
-| --- | --- | --- |
-| **Meorav** (PoC) | Code-switching text-to-speech: reads code-switched English aloud and pronounces the Hebrew words in it correctly. Experimental, no benchmark yet. [hebrish.app/models/meorav](https://hebrish.app/models/meorav) | [Meorav PoC-1](https://huggingface.co/Hebrish/TTS-V1) (Qwen3-TTS 12Hz 1.7B Base) · training code: [Meorav-TTS](https://github.com/Hebrish-ASR/Meorav-TTS) |
-| Token classifier | Supporting model: finds romanized Hebrew words in English text, for text-to-speech. | [Hebrew-Latin-Token-Classifier](https://huggingface.co/Hebrish/Hebrew-Latin-Token-Classifier) |
-
-On-device builds (sherpa-onnx, ONNX, GGUF, MLX) are in their own `-<format>` repos under [huggingface.co/Hebrish](https://huggingface.co/Hebrish). The speech recognition weights are gated: request access on the repository page, or write to [access@hebrish.app](mailto:access@hebrish.app). The apps download the models from Hebrish's own CDN and need no access request. Meorav PoC-1 is open (CC BY-NC 4.0). Model cards and benchmarks: [hebrish.app/models](https://hebrish.app/models).
+On-device builds (sherpa-onnx, ONNX, GGUF, MLX) are in their own `-<format>` repos under [huggingface.co/Hebrish](https://huggingface.co/Hebrish). Gated repositories approve access requests automatically once you accept the terms. The apps download the models from Hebrish's own CDN and need no access request. Model pages and benchmarks: [hebrish.app/models](https://hebrish.app/models).
 
 So far the models are trained on one speaker's voice. Want them to learn yours? [Contribute recordings](https://hebrish.app/support).
 
